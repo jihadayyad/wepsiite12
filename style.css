@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.contanire {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(./imge/imag/background.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contanire .box {
+    height: 86vh;
+    width: 75%;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    display: flex;
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+
+}
+
+.contanire::after {
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: #c1d9fb;
+    transform: translate(490px, 150px);
+    border-radius: 50%;
+}
+
+.contanire .box nav {
+    height: 7%;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding: 20px;
+}
+
+.contanire .box nav ul li {
+    display: inline-block;
+    padding: o 20px;
+}
+
+.contanire .box nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #242329;
+    transition: o.4s;
+}
+
+.contanire .box nav ul li a:hover {
+    color: #7c8bd1;
+}
+
+nav .Logo {
+    font-size: 35px;
+    color: #242329;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.contanire .box .containes {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 8%;
+    padding-left: 80px;
+}
+
+.contanire .box .containes .section-1 {
+    position: relative;
+    width: 40%;
+}
+
+.containes .section-1 h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #242329;
+}
+
+.containes .section-1 h3 {
+    font-size: 24px;
+    color: #6f34fe;
+    margin-bottom: 10px;
+}
+
+.containes .section-1 p {
+    font-size: 18px;
+    color: #505052;
+    margin-bottom: 50px;
+}
+
+.containes .section-1 .btn {
+    padding: 15px 20px;
+    background-color: #6f34fe;
+    border: 1px solid #6f34fe;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+.containes .section-1 .btn:hover {
+
+    background-color: #fff;
+    color: #6f34fe;
+}
+
+.containes .section-2 {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.containes .section-2 img {
+    width: 100%;
+
+}
+
+.containes .section-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    left: 10px;
+    top: 30%;
+}
+
+.containes .section-3 a i {
+    font-size: 25px;
+    color: #7c8bd1;
+    transition: 0.3s;
+}
+
+.containes .section-3 a i:hover {
+    color: #6f34fe;
+}
